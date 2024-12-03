@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the luxury of Rolls-Royce. Discover our exquisite vehicles and explore the pinnacle of automotive craftsmanship.">
+    <title>Rolls-Royce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+      /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: grey;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color:grey;
+    transform: scale(1.1);
+    transition: color 0.3s;
+}
+.nav-links :hover {
+    transform: scale(1.05);
+}
+/* Hero Section */
+.hero {
+    background: url('https://wallpapers.com/images/featured/rolls-royce-r5vl92b5wzzbzvjz.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:grey;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: grey;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.cta-button:hover {
+    background-color:grey;
+    transform: scale(1.85); 
+}
+
+
+
+/* Models Section */
+.models-section {
+    padding: 50px 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.models-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.model-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.model-card {
+    background-color: black;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.model-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+footer .social-links a:hover {
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><a href="#home">Rolls-Royce</a></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#models">Models</a></li>
+                    <li><a href="#heritage">History</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Experience the Pinnacle of Luxury</h1>
+            <p>Where craftsmanship meets innovation. Drive the extraordinary.</p>
+            <a href="#models" class="cta-button">Discover Models</a>
+        </div>
+    </section>
+
+    <section id="models" class="models-section">
+        <div class="container">
+            <h2>Our Models</h2>
+            <div class="model-list">
+                <div class="model-card">
+                    <img src="https://www.hdwallpapers.in/download/2021_rolls_royce_phantom_extended_2_4k_5k_hd_cars-1280x720.jpg" alt="Rolls-Royce Phantom">
+                    <h3>Phantom</h3>
+                </div>
+                <div class="model-card">
+                    <img src="https://w0.peakpx.com/wallpaper/246/971/HD-wallpaper-rolls-royce-ghost-black-badge-front-view-2019-cars-luxury-cars-tuning-2019-rolls-royce-ghost-british-cars-rolls-royce.jpg" alt="Rolls-Royce Ghost">
+                    <h3>Ghost</h3>
+                </div>
+                <div class="model-card">
+                    <img src="https://wallpapercat.com/w/full/1/7/9/1758273-2048x1359-desktop-hd-rolls-royce-wraith-wallpaper.jpg" alt="Rolls-Royce Wraith">
+                    <h3>Wraith</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="heritage" class="heritage-section">
+        <div class="container">
+            <h2>Our History</h2>
+            <br>
+            <br>
+            <img src="https://mediapool.bmwgroup.com/cache/P9/201706/P90264681/P90264681-field-marshal-montgomery-s-phantom-iii-2247px.jpg"width="1500px" height="600px" alt="THE 1930s: THE ROLLS-ROYCE PHANTOM III">
+            <p>You’ll find the roots of Rolls-Royce way back in January 1904. Two independent car manufacturers named Henry Royce and Charles Rolls made an alliance after admiring each other’s work in the emerging industry. They worked together to produce four models ranging from a £395 ($494) two cylinder 10HP to a £890 ($1114) six cylinder.Those models were unveiled at the Paris Salon in December the same year. They proved an immense success, and the Rolls-Royce Limited brand was formed just over a year later in 1906. Rolls-Royce has been synonymous with luxury and performance for over a century. Discover the legacy behind our iconic brand.</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <br>
+            <br>
+            <p>You've got questions? We're delighted to help you.
+                <br>
+              Please contact Rolls-Royce Assist for questions about Rolls-Royce Connected in your vehicle, on the Internet or on your smartphone.
+              <br>
+              You can reach us by:
+              <br>
+              Phone : 1-800-803-4658
+              <br>
+              Email : customercare@rolls-royceassist.com
+              <br>
+              Hours of Operation
+              <br>
+              Mon – Fri 8:00 a.m. - 6:00 p.m. Eastern Standard Time 
+<br>
+              For inquiries, please reach out at <a href="mailto:info@rollsroyce.com">info@rollsroyce.com</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rolls-Royce. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
